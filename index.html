@@ -17,10 +17,9 @@
     <input type="text" id="search-input" onkeyup="swimmerSearch()" placeholder="Search for names..">
     <table id="swimmers-table">
         <tr class="header">
-            <th style="width:15%;">Number</th>
-            <th style="width:30%;">Name</th>
-            <th style="width:30%;">Surname</th>
-            <th style="width:25%;">Country</th>
+            <th style="width:5%;">#</th>
+            <th style="width:45%;">Name</th>
+            <th style="width:50%;">Surname</th>
         </tr>
     </table>
 </div>
@@ -13029,7 +13028,7 @@
         ];
         swimmers.forEach(function (swimmer) {
             $('#swimmers-table')
-                .append("<tr><td>" + swimmer['number'] + "</td><td>" + swimmer['name'] + "</td><td>" + swimmer['surname'] + "</td><td>" + swimmer['country'] + "</td></tr>");
+                .append("<tr><td>" + swimmer['number'] + "</td><td>" + swimmer['name'] + "</td><td>" + swimmer['surname'] + "</td></tr>");
         });
     });
 
