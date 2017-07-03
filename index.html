@@ -13028,7 +13028,7 @@
         ];
         swimmers.forEach(function (swimmer) {
             $('#swimmers-table')
-                .append("<tr><td>" + swimmer['number'] + "</td><td>" + swimmer['name'] + "</td><td>" + swimmer['surname'] + "</td></tr>");
+                .append("<tr><td>" + swimmer['number'] + "</td><td>" + swimmer['name'] + "</td><td>" + swimmer['surname'].toLowerCase() + "</td></tr>");
         });
     });
 
